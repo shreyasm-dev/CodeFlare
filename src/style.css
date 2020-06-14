@@ -1,5 +1,6 @@
-:root {
+html {
 	--theme-color-: black;
+	--theme-color-secondary-: white;
 }
 
 html, body {
@@ -22,11 +23,11 @@ html, body {
 }
 
 #toolbar > div {
-	color: white;
+	color: var(--theme-color-secondary-);
 	padding: 10px;
 	width: fit-content;
 	display: inline-block;
-	border: solid 2px white;
+	border: solid 2px var(--theme-color-secondary-);
 	border-top: none;
 	border-bottom: none;
 	border-left: none;
@@ -88,9 +89,9 @@ html, body {
 }
 
 #customizeDebugOptions > #sandbox > button {
-	color: white;
+	color: var(--theme-color-secondary-);
 	background-color: var(--theme-color-);
-	border: solid 1px white;
+	border: solid 1px var(--theme-color-secondary-);
 	padding: 5px;
 	border-radius: 10px;
 	outline: none !important;
@@ -98,7 +99,6 @@ html, body {
 
 #themePicker {
 	background-color: grey;
-	border: solid grey;
 	text-align: center;
 	padding: 3px;
 }
